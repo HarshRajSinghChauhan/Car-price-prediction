@@ -1,0 +1,29 @@
+<html>
+<body>
+    <h2>Car Price Prediction</h2>
+    <form action="/predict" method="POST">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" required><br><br>
+
+        <label for="present_price">Present Price:</label>
+        <input type="number" id="present_price" name="present_price" step="0.01" required><br><br>
+
+        <label for="kms_driven">Kilometers Driven:</label>
+        <input type="number" id="kms_driven" name="kms_driven" required><br><br>
+
+        <label for="fuel_type">Fuel Type (0: Petrol, 1: Diesel, 2: CNG):</label>
+        <input type="number" id="fuel_type" name="fuel_type" min="0" max="2" required><br><br>
+
+        <label for="seller_type">Seller Type (0: Dealer, 1: Individual):</label>
+        <input type="number" id="seller_type" name="seller_type" min="0" max="1" required><br><br>
+
+        <label for="transmission">Transmission (0: Manual, 1: Automatic):</label>
+        <input type="number" id="transmission" name="transmission" min="0" max="1" required><br><br>
+
+        <label for="owner">Owner (1: First, 2: Second, 3: Third, 4: Fourth and above):</label>
+        <input type="number" id="owner" name="owner" min="1" max="4" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
